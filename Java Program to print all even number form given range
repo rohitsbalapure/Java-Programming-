@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class M4 
+{
+    public static void main(String[] args) {
+      Scanner Sc = new Scanner(System.in);
+        System.out.println("Enter Starting Number");
+        int Start = Sc.nextInt();
+        System.out.println("Enter Ending Year");
+              int end =Sc.nextInt();
+              for (int i = Start; i<=end; i++)
+              {
+                  if (checkEven(i))
+                  {
+                      System.out.println(i);
+                  }
+              }
+    }
+    public static boolean checkEven(int Num )
+    {
+        if (Num%2==0)
+        {
+            return true;
+        }
+        return false;
+   }
+}
