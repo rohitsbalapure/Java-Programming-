@@ -1,0 +1,20 @@
+public class PatternCross {
+    public static void main(String[] args) {
+        for (int i =0; i<4; i++)
+        {
+            for (int J= 0; J<4; J++)
+            {
+                if (i==J || i+J==3)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+}
