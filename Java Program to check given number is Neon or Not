@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class NeonNumber {
+    public static boolean isNeon(int num)
+    {
+        int squre=(num*num);
+        int sum=0, n;
+        while (squre!=0)
+        {
+            n = squre % 10;
+            sum = sum + n;
+            squre /= 10;
+        }
+       if (sum==num)
+       {
+           return true;
+       }
+       return false;
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter A Number to check it is Neon or not");
+        int num =sc.nextInt();
+        if (isNeon(num))
+        {
+            System.out.println("It is Neon Number");
+        }
+        else {
+            System.out.println("It Is Not Neon Number");
+        }
+    }
+}
