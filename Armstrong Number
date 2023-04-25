@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ArmstrongNumber {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int num= sc.nextInt();
+        int arm=0, rem=0;
+        for (int i = num; i!=0; i/=10)
+        {
+            rem=i%10;
+            arm=(rem*rem*rem)+ arm;
+        }
+        if(num==arm)
+        {
+            System.out.println("it is Armstrong  number");
+        }
+        else
+        {
+            System.out.println("It is not armstrong Number");
+        }
+    }
+}
