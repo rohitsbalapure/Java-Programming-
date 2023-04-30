@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Multiplication {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number ");
+        int start=sc.nextInt();
+        System.out.println("enter last number");
+        int last=sc.nextInt();
+        int ans;
+        for (int i = start; i<=last; i++) {
+            for (int j = 1; j <= 10; j++) {
+                ans = i * j;
+                System.out.println(ans);
+            }
+            System.out.println("=============================================");
+        }
+    }
+}
